@@ -1,0 +1,22 @@
+.all-content{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-top:100px;
+    background-color: white;
+    width: fit-content;
+    margin-left: 300px;
+    height: auto;
+}
+body{
+    background-color: aqua;
+}
+.heading{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.output{
+    background-color: rgb(204, 161, 245);
+}

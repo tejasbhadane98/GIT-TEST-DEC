@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css_final.css">
+    
+    <script src="./filter.js"></script>
+    
+    <!-- <link rel="stylesheet" href="./css-1.css"> -->
+    <title>Fixed table</title>
+</head>
+
+<body>
+   
+    <div class="outer-wrapper">
+    <div class="table-wrapper">
+    <table id="emp-table">
+        <thead>
+            
+            <th col-index = 2>Identity
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+
+            <th col-index = 3>Region
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+            <th col-index = 4>Name
+              
+            </th>
+           
+            
+        </thead>
+        <tbody>
+            <tr>
+              
+                <td>Male</td>
+                
+                <td>Albania</td>
+                <td>Aleks","Alesandro","Aron","Enrik","Flavio","Luis","Noel","Alban","Andi","Endri","Ermir","Arlind","Glen","Daniel",</td>
+                
+            </tr>
+            <tr>
+               
+                <td>Female</td>
+                <td>Albania</td>
+                <td>Alesia","Anamaria","Greis","Klea","Sara","Sidorela","Uendi","Armela","Megi","Sindi","Drita","Albana","Kejsi","Adea","Anila","Suzana","Loreta","Alma",</td>
+                
+            </tr>
+            <tr>
+               
+                <td>Surname</td>
+                <td>Albania</td>
+                <td>Bogdani","Dervishi","Dukagjini","Dushku","Frashëri","Gjoni","Gurakuqi","Hoxha","Leka","Loshi","Prifti","Baku","Kola","Zane","Musaj","Agolli","Brahimi"</td>
+               
+            </tr>
+            <tr>
+              
+                <td>Male</td>
+                <td>Argentina</td>
+                <td>Agustín","Sebastián","Nicolás","Lautaro","Tomás","Lucas","Joaquín","Santiago","Federico","Juan","Juan Pablo","Andrés","Thiago","Benjamín","Bautista"</td>
+               
+            </tr>
+            <tr>
+                
+                <td>Female</td>
+                <td>Argentina</td>
+                <td>Sofía","Isabella","Jazmín","Mía","Juana","Martina","Morena","Uma","Lucía","María","Victoria","Laura","Agustina","Lucrecia","Florencia","Emma","Pamela"</td>
+                
+            </tr>
+            <tr>
+                
+                <td>Surname</td>
+                <td>Argentina</td>
+                <td>González","Rodríguez","Gómez","Fernández","López","Díaz","Martínez","Pérez","García","Sánchez","Romero","Álvarez","Torres","Ruiz","Ramírez","Flores"</td>
+               
+            </tr>
+            <tr>
+                
+                <td>male</td>
+                <td>Armenia</td>
+                <td>Արման","Արմեն","Խաչիկ","Վազգեն","Նարեկ","Դավիթ","Հայկ","Տիգրան","Սամվել","Արթուր","Արամ","Աշոտ","Գեւորգ","Վահե","Վահան","Արսեն","Գագիկ","Լեւոն","Կարեն"</td>
+                
+            </tr>
+           
+            <td>Female</td>
+            <td>Armenia</td>
+            <td>Մանե","Միլենա","Մարի","Նարե","Անի","Անահիտ","Մարիամ","Գայանե","Լիլիթ","Հասմիկ","Սուսաննա","Սոնա","Գոհար","Կարինե","Անուշ","Լուսինե","Յանա","Մարինե",</td>
+            
+            
+                <tr>
+                   
+                    <td>Surname</td>
+                    <td>Armenia</td>
+                    <td>Շահինյան","Նազարյան","Առաքելյան","Հարությունյան","Գեւորգյան","Կարապետյան","Հովսեփյան","Հովհաննիսյան","Գուլբենկյան","Հակոբյան","Խաչատրյան","Մանուկյան",</td>
+                    
+                </tr>
+                <tr>
+                
+                <td>Male</td>
+                <td>Australia</td>
+                <td>Benjamin","Charlie","Cooper","Daniel","Ethan","Harriso","Harrison","Harry","Henry","Jack","Jacob","James","Joshua","Lachlan","Levi","Liam","Lucas","Mason",</td>
+              
+            </tr>
+            <tr>
+                
+                <td>Female</td>
+                <td>Australia</td>
+                <td>Amelia","Ava","Charlotte","Chloe","Ella","Emily","Grace","Isabella","Jasmine","Lily","Lucy","Matilda","Mia","Olivia","Ruby","Sienna","Sophia","Sophie"</td>
+              
+            </tr>
+            <tr>
+               
+                <td>Surname</td>
+                <td>Australia</td>
+                <td>Smith","Jones","Williams","Brown","Wilson","Taylor","Morton","White","Martin","Anderson","Thompson","Nguyen","Thomas","Walker","Harris","Lee","Ryan",</td>
+               
+            </tr>
+            <tr>
+                
+                <td>Male</td>
+                <td>Austria</td>
+                <td>Michael","Patrick","Stefan","Daniel","Thomas","Christoph","Dominik","Lukas","Philip","Florian","Manuel","Andreas","Alexander","Markus","Martin","Matthias"</td>
+                
+            </tr>
+            <tr>
+                
+                <td>Female</td>
+                <td>Austria</td>
+                <td>Julia","Lisa","Stefanie","Katharina","Melanie","Christina","Sabrina","Sarah","Anna","Sandra","Katrin","Carina","Bianca","Nicole","Jasmin","Kerstin","Tanja</td>
+                
+            </tr>
+            <tr>
+                
+                <td>Female</td>
+                <td>Austria</td>
+                <td>Gruber","Huber","Bauer","Wagner","Müller","Pichler","Steiner","Moser","Mayer","Hofer","Leitner","Berger","Fuchs","Eder","Fischer","Schmid","Winkler"</td>
+               
+            </tr>
+            <tr>
+                
+                <td>Male</td>
+                <td>Azerbaijan</td>
+                <td>Adil","Adnan","Akif","Anar","Arif","Aslan","Aydın","Azər","Bayram","Bəhram","Cahangir","Cavid","Ceyhun","Cəlil","Çingiz","Dadaş","Elçin","Eldar","Elman</td>
+                
+            </tr>
+            <tr>
+               
+                <td>Female</td>
+                <td>Azerbaijan</td>
+                <td>Aidə","Almaz","Arifə","Arzu","Aybəniz","Ayan","Aydan","Aygül","Aygün","Ayla","Aynur ","Aysu","Aysel","Aytən","Aytəkin","Cəmilə","Çinarə","Dilarə","Elmira</td>
+               
+            </tr>
+            <tr>
+                
+                <td>Surname</td>
+                <td>Azerbaijan</td>
+                <td>Aslanzadə","Bayramlı","Bəhramzadə","Cəlilli","Dadaşlı","Əbdülzadə","Əhmədli","Əkbərli","Əlizadə","Heydərli","Həsənli","Həsənzadə","Hüseynzadə</td>
+              
+            </tr>
+            <tr>
+                
+                <td>Male</td>
+                <td>Bangladesh</td>
+                <td>Apurba","Shafin","Ashraf","Sabbir","Atique","Mamun","Ehsan","Fuad","Anwar","Fahad","Faisal","Rabbi","Shohag","Mahfuj","Mahfuz","Mahfujul","Kamrul"</td>
+              
+            </tr>
+            <tr>
+                
+                <td>Female</td>
+                <td>Bangladesh</td>
+                <td>Nargis","Ayesha","Yasmin","Sanjida","Samia","Afsana","Nazmin</td>
+                
+            </tr>
+            <tr>
+               
+                <td>Surname</td>
+                <td>Bangladesh</td>
+                <td>Khan","Chowdhury","Rahman","Ahmed","Haque","Hussain","Hossain","Islam","Mia","Talukdar","Sikdar","Hadi","Uddin","Mahmud"</td>
+                
+            
+           
+             <tr>
+               
+                <td>Male</td>
+                <td>China</td>
+                <td>"伟","刚","勇","毅","俊","峰","强","军","平","保","东","文","辉","力","明","永","健","世","广","志","义","兴","良","海","山","仁","波","宁","贵","福"</td>
+               
+            </tr>
+            <tr>
+               
+                <td>Female</td>
+                <td>China</td>
+                <td>俞","倩","倪","倰","偀","偲","妆","佳","亿","仪","寒","宜","女","奴","妶","好","妃","姗","姝","姹","姿","婵","姑","姜","姣","嫂","嫦","嫱","姬","娇"</td>
+               
+            </tr>
+            <tr>
+                
+                <td>Surname</td>
+                <td>China</td>
+                <td>李","张","王","李","张","刘","陈","杨","黄","赵","吴","周","徐","孙","马","朱","胡","郭","何","高","林","罗","郑","梁","谢","宋","唐","许",</td>
+                
+            </tr>
+            
+
+        </tbody>
+    </table>
+    <!-- <script>getUniqueValuesFromColumn()
+    </script> -->
+    <script>
+        window.onload = () => {
+            console.log(document.querySelector("#emp-table > tbody > tr:nth-child(1) > td:nth-child(2) ").innerHTML);
+        };
+
+        getUniqueValuesFromColumn()
+        
+    </script>
+</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+button{
+ 
+  padding: 4px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+button:hover{
+  background-color: rgb(59, 137, 228);
+}
+
+#card{
+  display: flex;
+  padding: .87rem;
+  color: rgb(236, 174, 223);
+  background-color: rgb(14, 157, 201);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  box-shadow: 11px 10px 25px -17px rgb(63, 236, 86);
+  border-radius: .8rem;
+  font-weight: bold;
+  max-width: 500px;
+  max-height: 150px;
+  margin-top: 10px;
+  margin-left: 26px;
+  letter-spacing: .5px;
+
+}
+#card p {
+  margin-left: .8rem;
+  margin-bottom: 10px;
+}
+
